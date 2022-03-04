@@ -6,7 +6,7 @@ pipeline {
                 echo 'executing node..'
                 nodejs('Node-16.14.0'){
                     sh 'npm install'
-                    sh 'npm yarn install'
+                    sh 'npm install yarn'
                 }
            }
         }
