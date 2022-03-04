@@ -4,14 +4,17 @@ pipeline {
     environment{
         CI = 'true'
     }
+    tools{
+        nodejs "Node-16.14.0"
+    }
     stages {
         stage('Build') {
             steps { 
                 echo 'executing node..'
-                nodejs('Node-16.14.0'){
-                    sh 'npm install'
-                    sh 'npm install yarn'
-                }
+                sh 'npm install'
+                echo 'executing yarn..'
+                sh 'npm install yarn'
+              
            }
         }
         stage('Test'){
