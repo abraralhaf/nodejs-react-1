@@ -14,6 +14,7 @@ pipeline {
                 sh 'npm install'
                 echo 'executing yarn..'
                 sh 'npm install yarn'
+                echo 'finishing build..'
               
            }
         }
