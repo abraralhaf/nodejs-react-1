@@ -13,12 +13,12 @@ pipeline {
         stage('Build') {
             steps {
                 // bat 'npm install'
-                echo 'finish build'
+                echo 'finish build update'
             }
         }
         stage('Test') {
             steps {
-                  echo 'finish test '
+                  echo 'finish test update'
             }
         }
     }
